@@ -63,7 +63,7 @@ async function testDB() {
   }
 }
 
-const debug = true;;
+const debug = true;
 if (debug) {testDB()};
 
 const fs = require("fs");
