@@ -191,7 +191,7 @@ export default {
       this.progress = true;
 
       let response = await fetch(
-        `http://158.101.115.160:3000/q1?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
+        `http://baseballdatatrends.com/q1?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
       );
       let data = await response.json();
       this.dataFromOracle = data;
