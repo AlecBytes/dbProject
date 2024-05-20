@@ -147,7 +147,7 @@ export default defineComponent({
     async countTuples () {
       console.log('counting tuples')
       let response = await fetch(
-        `http://158.101.115.160:3000/count`
+        `https://158.101.115.160:3000/count`
       );
       let data = await response.json();
       this.tuple_count = data[0][0].toLocaleString();

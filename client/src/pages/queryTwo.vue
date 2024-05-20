@@ -215,7 +215,7 @@ export default {
     },
     async setTeamsInRange() {
       let response = await fetch(
-        `http://158.101.115.160:3000/q2/teams_in_range?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
+        `https://158.101.115.160:3000/q2/teams_in_range?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
       );
       let data = await response.json();
       this.dataFromOracle = data;
@@ -241,7 +241,7 @@ export default {
       this.progress = true;
 
       let response = await fetch(
-        `http://158.101.115.160:3000/q2?startYear=${this.year_range.min}&endYear=${this.year_range.max}&team=${this.team.value}`
+        `https://158.101.115.160:3000/q2?startYear=${this.year_range.min}&endYear=${this.year_range.max}&team=${this.team.value}`
       );
       let data = await response.json();
       this.dataFromOracle = data;

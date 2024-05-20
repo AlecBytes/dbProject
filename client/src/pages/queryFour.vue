@@ -238,7 +238,7 @@ export default {
             this.year_range.min = 1955;
           }
 
-          response = await fetch(`http://158.101.115.160:3000/q4/obp?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
+          response = await fetch(`https://158.101.115.160:3000/q4/obp?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
           this.yaxisTitle = "On Base Percentage";
         }
         else if (this.metric == "RF") {
@@ -246,7 +246,7 @@ export default {
             this.year_range.min = 1934;
           }
 
-          response = await fetch(`http://158.101.115.160:3000/q4/rf?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
+          response = await fetch(`https://158.101.115.160:3000/q4/rf?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
           this.yaxisTitle = "Range Factor";
         }
         else if (this.metric == "OBPA") {
@@ -254,7 +254,7 @@ export default {
             this.year_range.min = 1970;
           }
 
-          response = await fetch(`http://158.101.115.160:3000/q4/obpa?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
+          response = await fetch(`https://158.101.115.160:3000/q4/obpa?startYear=${this.year_range.min}&endYear=${this.year_range.max}`);
           this.yaxisTitle = "On Base Percentage Against";
         }
 

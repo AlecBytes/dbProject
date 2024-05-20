@@ -191,7 +191,7 @@ export default {
 
     async setTeamsInRange() {
       let response = await fetch(
-        `http://158.101.115.160:3000/q3/teams_in_range?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
+        `https://158.101.115.160:3000/q3/teams_in_range?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
       );
       let data = await response.json();
 
@@ -212,7 +212,7 @@ export default {
       this.progress = true;
 
       let response = await fetch(
-        `http://158.101.115.160:3000/q3?startYear=${this.year_range.min}&endYear=${this.year_range.max}&team=${this.team.value}`
+        `https://158.101.115.160:3000/q3?startYear=${this.year_range.min}&endYear=${this.year_range.max}&team=${this.team.value}`
       );
       let data = await response.json();
       this.xAxisLabels = data.map((item) => item[0]);
