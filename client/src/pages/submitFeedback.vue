@@ -122,7 +122,7 @@ export default {
               console.log(email.value);
               console.log(feedbackBody.value);
 
-              let response = await fetch('https://158.101.115.160:3000/feedback', {
+              let response = await fetch('https://www.baseballdatatrends.com/feedback', {
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json'

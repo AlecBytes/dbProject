@@ -230,7 +230,7 @@ export default {
         let response = await fetch(
           // `http://158.101.115.160:4000/q5?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
           // `http://158.101.115.160:4000/q5?startYear=${this.percentile}&endYear=${this.year_range.min}&percentile=${this.year_range.max}`
-          `https://158.101.115.160:3000/q5?percentile=${percent_formatted}&startYear=${this.year_range.min}&endYear=${this.year_range.max}`
+          `https://www.baseballdatatrends.com/q5?percentile=${percent_formatted}&startYear=${this.year_range.min}&endYear=${this.year_range.max}`
         );
         let data = await response.json();
         this.dataFromOracle = data;
