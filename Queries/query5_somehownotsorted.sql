@@ -75,5 +75,3 @@ SELECT
     AllPercentageInPost.percentage_of_all_in_postseason AS percentage_of_all_in_postseason
 FROM Top5PercentageInPost
 JOIN AllPercentageInPost ON Top5PercentageInPost.year = AllPercentageInPost.year
-ORDER BY
-    Top5PercentageInPost.year
