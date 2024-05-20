@@ -119,7 +119,7 @@
           size="lg"
           color="accent"
           icon="navigate_before"
-          to="/queryThree"
+          to="/foreignBorn"
         />
         <q-btn
           class="glossy"
@@ -127,7 +127,7 @@
           size="lg"
           color="accent"
           icon-right="navigate_next"
-          to="queryFive"
+          to="hrPost"
         />
       </div>
     </div>

@@ -100,7 +100,7 @@
           size="lg"
           color="accent"
           icon="navigate_before"
-          to="/queryOne"
+          to="/runsToOuts"
         />
         <q-btn
           class="glossy"
@@ -108,7 +108,7 @@
           size="lg"
           color="accent"
           icon-right="navigate_next"
-          to="queryThree"
+          to="foreignBorn"
         />
       </div>
     </div>

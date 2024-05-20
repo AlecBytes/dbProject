@@ -94,7 +94,7 @@
           size="lg"
           color="accent"
           icon="navigate_before"
-          to="/queryTwo"
+          to="/spendingPerWin"
         />
         <q-btn
           class="glossy"
@@ -102,7 +102,7 @@
           size="lg"
           color="accent"
           icon-right="navigate_next"
-          to="queryFour"
+          to="sizePerformance"
         />
       </div>
     </div>

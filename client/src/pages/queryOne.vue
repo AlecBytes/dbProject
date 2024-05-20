@@ -128,7 +128,7 @@
           size="lg"
           color="accent"
           icon-right="navigate_next"
-          to="queryTwo"
+          to="spendingPerWin"
         />
       </div>
     </div>

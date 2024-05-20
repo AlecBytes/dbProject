@@ -12,7 +12,7 @@
         <q-img fit="cover" src="~/assets/q1-cardImage.png" class="query-img-card">
           <div class="absolute-full transparent">
             <q-list class="absolute-full transparent">
-              <q-item to="queryOne" class="absolute-full transparent"></q-item>
+              <q-item to="runsToOuts" class="absolute-full transparent"></q-item>
             </q-list>
           </div>
           <div class="absolute-bottom text-h6">
@@ -29,7 +29,7 @@
         <q-img src="~/assets/q2-cardImage.png" class="query-img-card">
           <div class="absolute-full transparent">
             <q-list class="absolute-full transparent">
-              <q-item to="queryTwo" class="absolute-full transparent"></q-item>
+              <q-item to="spendingPerWin" class="absolute-full transparent"></q-item>
             </q-list>
           </div>
           <div class="absolute-bottom text-h6">
@@ -46,7 +46,7 @@
         <q-img src="~/assets/q3-cardImage1.png" class="query-img-card">
           <div class="absolute-full transparent">
             <q-list class="absolute-full transparent">
-              <q-item to="queryThree" class="absolute-full transparent"></q-item>
+              <q-item to="foreignBorn" class="absolute-full transparent"></q-item>
             </q-list>
           </div>
           <div class="absolute-bottom text-h6">
@@ -63,7 +63,7 @@
         <q-img src="~/assets/q4-cardImage1.png" class="query-img-card" fit="cover">
           <div class="absolute-full transparent">
             <q-list class="absolute-full transparent">
-              <q-item to="queryFour" class="absolute-full transparent"></q-item>
+              <q-item to="sizePerformance" class="absolute-full transparent"></q-item>
             </q-list>
           </div>
           <div class="absolute-bottom text-h6">
@@ -80,7 +80,7 @@
         <q-img src="~/assets/q5-cardImage.png" class="query-img-card">
           <div class="absolute-full transparent">
             <q-list class="absolute-full transparent">
-              <q-item to="queryFive" class="absolute-full transparent"></q-item>
+              <q-item to="hrPost" class="absolute-full transparent"></q-item>
             </q-list>
           </div>
           <div class="absolute-bottom text-h6">
@@ -115,7 +115,7 @@
     </div>
 
     <div class="row justify-center">
-      <q-btn class="glossy q-my-sm" color="accent" label="Start Here" to="queryOne"/>
+      <q-btn class="glossy q-my-sm" color="accent" label="Start Here" to="runsToOuts"/>
     </div>
 
   </q-page>
