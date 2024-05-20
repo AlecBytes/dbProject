@@ -13,11 +13,6 @@ let connectionConfig = {
   connectString: "rjbt2da7d3zjitl6_high",
 };
 
-let connectionConfigDebug = {
-  user: "ADMIN",
-  password: "Science3-Ice2-Genetics3-Quail0",
-  connectString: "rjbt2da7d3zjitl6_high",
-};
 // EXPRESS
 const express = require("express");
 const app = express();
@@ -49,10 +44,7 @@ async function testDB() {
   let connection;
   let result;
   try {
-    console.log("attempting connection...");	  
-    connection = await oracledb.getConnection(connectionConfigDebug);
-    console.log(connection);
-    console.log("attempting test query...")
+    connection = await oracledb.getConnection(connectionConfig);
     result = await connection.execute("SELECT COUNT(*) FROM player");
     console.log("Successfully connected to Oracle!");
     console.log(result.rows);
