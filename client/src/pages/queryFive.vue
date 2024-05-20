@@ -218,7 +218,7 @@ export default {
       this.showPlaceHolder = false;
       this.showVisualization = false;
       this.showLoading = true;
-      console.log(this.year_range.min, this.year_range.max);
+      //console.log(this.year_range.min, this.year_range.max);
 
       this.progress = true;
       

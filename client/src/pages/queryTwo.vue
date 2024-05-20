@@ -220,18 +220,18 @@ export default {
       let data = await response.json();
       this.dataFromOracle = data;
 
-      console.log(data);
-      console.log(this.year_range.min);
-      console.log(this.year_range.max);
+      //console.log(data);
+      //console.log(this.year_range.min);
+      //console.log(this.year_range.max);
 
       this.teams = data.map((item) => ({ label: item[1], value: item[0] }));
     },
     async runQuery() {
       this.showLoading = true;
       this.showVisualization = false;
-      console.log(this.team);
-      console.log(this.team2);
-      console.log(this.year_range.min, this.year_range.max);
+      //console.log(this.team);
+      //console.log(this.team2);
+      //console.log(this.year_range.min, this.year_range.max);
 
       // this.updateTeamLabels();
       this.dataSets[0].label = this.team.value;

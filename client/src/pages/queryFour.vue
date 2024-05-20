@@ -227,11 +227,11 @@ export default {
         this.showPlaceholder = false;
         this.showVisualization = false;
         this.showLoading = true;
-        console.log(this.year_range.min, this.year_range.max);
+        // console.log(this.year_range.min, this.year_range.max);
 
         this.progress = true;
 
-        console.log(this.metric);
+        // console.log(this.metric);
         let response;
         if (this.metric == "OBP") {
           if (this.year_range.min < 1955) {

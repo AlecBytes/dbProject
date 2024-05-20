@@ -195,7 +195,7 @@ export default {
       );
       let data = await response.json();
       this.dataFromOracle = data;
-      console.log(data);
+      // console.log(data);
 
       this.xlabels = data.map((item) => item[0]);
       this.dataSets[0].data = data.map((item) => item[1]);
