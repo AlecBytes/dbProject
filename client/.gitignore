@@ -31,3 +31,11 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+
+# Data files
+*.sqlite
+*.csv
+
+# DB credentials
+.env
+/server/connection/
