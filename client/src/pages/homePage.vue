@@ -145,14 +145,14 @@ export default defineComponent({
   ,
   methods: {
     async countTuples () {
-      console.log('counting tuples')
+      // console.log('counting tuples')
       let response = await fetch(
         `https://www.baseballdatatrends.com/count`
       );
       let data = await response.json();
       this.tuple_count = data[0][0].toLocaleString();
-      console.log(data);
-      console.log(data[0]);
+      //console.log(data);
+      //console.log(data[0]);
     }
   }
 })

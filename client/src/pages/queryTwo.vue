@@ -245,7 +245,7 @@ export default {
       );
       let data = await response.json();
       this.dataFromOracle = data;
-      console.log(data);
+      // console.log(data);
 
       this.xlabels = data.map((item) => item[0]);
       // add a dataset for each column (team), except the first (year)

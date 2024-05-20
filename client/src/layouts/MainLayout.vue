@@ -15,7 +15,8 @@
           {{ $route.meta.title }}
         </q-toolbar-title>
 
-        <div>Fall 2023 - CIS4301 - Group 15</div>
+        <!-- I'd like to make this only display on mobil -->
+        <!--<div>Fall 2023 - CIS4301 - Group 15</div>-->
       </q-toolbar>
     </q-header>
 
@@ -49,32 +50,32 @@ const linksList = [
     link: "#/",
   },
   {
-    title: "Query 1",
-    caption: "Runs-to-Outs by Salary range",
+    title: "Runs-to-Outs",
+    caption: "By salary range",
     icon: "sports_baseball",
     link: "#/queryOne",
   },
   {
-    title: "Query 2",
-    caption: "Team Spending Per Win",
+    title: "Team Spending",
+    caption: "For each win",
     icon: "sports_baseball",
     link: "#/queryTwo",
   },
   {
-    title: "Query 3",
-    caption: "Foreign-born MLB player distributions",
+    title: "Foreign-born Players and Wins",
+    caption: "MLB player distributions vs wins",
     icon: "sports_baseball",
     link: "#/queryThree",
   },
   {
-    title: "Query 4",
-    caption: "Player Height & Performance",
+    title: "Player Height & Performance",
+    caption: "Are short players better?",
     icon: "sports_baseball",
     link: "#/queryFour",
   },
   {
-    title: "Query 5",
-    caption: "Home Runs & Post Season",
+    title: "Home Runs & Post Season",
+    caption: "Do home run hitters reach the post season more frequently?",
     icon: "sports_baseball",
     link: "#/queryFive",
   },
