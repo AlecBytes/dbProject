@@ -18,26 +18,42 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-// allow cross origin requests
+// Allow cross-origin requests
 const cors = require("cors");
+
+// Configure allowed origins
+const allowedOrigins = [
+  "http://localhost:9000", // Development
+  "https://www.baseballdatatrends.com", // Production
+];
+
+// Set CORS options
 const corsOptions = {
-  origin: "http://localhost:9000/",
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true); // Allow requests with no origin (like mobile apps or curl requests)
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
-  optionSuccessStatus: 200,
+  optionsSuccessStatus: 200,
 };
-app.options("*", cors());
+
 app.use(cors(corsOptions));
+
+// Set additional headers for all responses
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:9000");
-  res.header("Access-Control-Allow-Headers", true);
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
+  const origin = req.header("Origin");
+  if (allowedOrigins.includes(origin)) {
+    res.header("Access-Control-Allow-Origin", origin);
+  }
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Credentials", "true");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
   next();
 });
-
 async function testDB() {
   console.log("Testing DB connection...");
   oracledb.initOracleClient({ libDir: "/usr/lib/oracle/21/client64/lib/" });
