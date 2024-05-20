@@ -102,7 +102,7 @@ async function runQuery1(start, end) {
     }
 
     result = await connection.execute(sql, { startYear: start, endYear: end });
-    console.log(result.rows);
+    // console.log(result.rows);
   } catch (err) {
     console.error("Error connecting to the database", err);
   } finally {
@@ -125,7 +125,7 @@ async function getTeamsInRange(start, end) {
     console.log("Successfully connected to Oracle!");
     const sql = fs.readFileSync("../Queries/getTeamsInRange.sql").toString();
     result = await connection.execute(sql, { startYear: start, endYear: end });
-    console.log(result.rows);
+    // console.log(result.rows);
   } catch (err) {
     console.error("Error connecting to the database", err);
   } finally {
@@ -152,7 +152,7 @@ async function runQuery2(start, end, tID) {
       endYear: end,
       team: tID,
     });
-    console.log(result.rows);
+    // console.log(result.rows);
   } catch (err) {
     console.error("Error connecting to the database", err);
   } finally {
@@ -179,7 +179,7 @@ async function runQuery3(start, end, tID) {
       endYear: end,
       team: tID,
     });
-    console.log(result.rows);
+    // console.log(result.rows);
   } catch (err) {
     console.error("Error connecting to the database", err);
   } finally {
@@ -209,7 +209,7 @@ async function runQuery4obp(start, end) {
     }
 
     result = await connection.execute(sql, { startYear: start, endYear: end });
-    console.log(result.rows);
+    // console.log(result.rows);
   } catch (err) {
     console.error("Error connecting to the database", err);
   } finally {

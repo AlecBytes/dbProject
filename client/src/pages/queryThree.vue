@@ -195,9 +195,9 @@ export default {
       );
       let data = await response.json();
 
-      console.log(data);
-      console.log(this.year_range.min);
-      console.log(this.year_range.max);
+      // console.log(data);
+      // console.log(this.year_range.min);
+      // console.log(this.year_range.max);
 
       this.teams = data.map((item) => ({ label: item[1], value: item[0] }));
     },
@@ -205,7 +205,7 @@ export default {
     async runQuery() {
       this.showLoading = true;
       this.showVisualization = false;
-      console.log(this.year_range.min, this.year_range.max);
+      // console.log(this.year_range.min, this.year_range.max);
 
       this.updateTeamLabels();
 

@@ -222,10 +222,10 @@ export default {
 
       this.progress = true;
       
-      console.log("percentile: " + this.percentile);
+      // console.log("percentile: " + this.percentile);
       let percent_formatted = this.percentile.toFixed(2);
       percent_formatted *= 0.01;
-      console.log("percent_formatted: " + percent_formatted);
+      // console.log("percent_formatted: " + percent_formatted);
       try {
         let response = await fetch(
           // `http://158.101.115.160:4000/q5?startYear=${this.year_range.min}&endYear=${this.year_range.max}`
@@ -235,7 +235,7 @@ export default {
         let data = await response.json();
         this.dataFromOracle = data;
   
-        console.log(data);
+        // console.log(data);
   
         this.xlabels = data.map((item) => item[0]);
         this.dataSets[0].data = data.map((item) => item[1]);

@@ -118,9 +118,9 @@ export default {
             },
 
             async onSubmit() {
-              console.log(name.value);
-              console.log(email.value);
-              console.log(feedbackBody.value);
+              // console.log(name.value);
+              // console.log(email.value);
+              // console.log(feedbackBody.value);
 
               let response = await fetch('https://www.baseballdatatrends.com/feedback', {
                   method: 'POST',
@@ -139,7 +139,7 @@ export default {
                   })
               });
 
-              console.log(response);
+              // console.log(response);
               if (response.ok) {
                 // $q.notify({
                 //       color: 'green-4',
