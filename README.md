@@ -1,24 +1,50 @@
-# Database Project
+# Baseball Data Trends – A SQL Database & REST API Project
 
-Interact with the app at https://baseballdatatrends.com
+A SQL-based project analyzing baseball data with a structured schema, optimized queries, and interactive visualizations powered by a REST API.
 
-Currently deployed to my (Alec) Oracle Cloud DB and compute instance. See the Oracle deployment branch for the changes made after project completion to migrate the app and db to my (Alec) personal Oracle Cloud for public distribution.
+## 🚀 Deployment  
+This project is deployed on **Oracle Cloud DB and Compute**. After the initial completion, I (Alec) migrated the app and database to my personal Oracle Cloud instance for public access. You can find the deployment-specific modifications in the **Oracle deployment branch**.  
 
-### Contributors
+🔗 **Live App:** [Baseball Data Trends](https://baseballdatatrends.com)  
 
-- Alec Patterson
-- Joseph Barron
-- Christian Carey
-- Quan Nguyen
+## ⭐PLEASE STAR THIS REPO⭐
 
-### What this app does
+💡 Found this project useful? Give it a ⭐ to show your support and help others discover it. Your feedback and engagement are greatly appreciated! 🙏
 
-Five visualizations of baseball statistical data. 
+---
 
-### Front End
+## 📌 Features  
+- Five interactive visualizations of baseball statistical data  
+- REST API for querying and fetching data  
+- Hosted on **Oracle Cloud** with an **Autonomous SQL Database**  
+- Frontend built with **Vue.js & Quasar**, backend powered by **Node.js & Express** 
 
-Quasar framework UI (Vue.js based)
+## 🛠 Tech Stack  
 
-### Back End
+### **Frontend**  
+- **Vue.js** (JavaScript framework)  
+- **Quasar Framework** (UI framework for Vue)  
+- **Chart.js** (Data visualization library)  
 
-Node.js Express that interacts with Oracle SQL 
+### **Backend**  
+- **Node.js** (JavaScript runtime)  
+- **Express.js** (REST API framework)  
+- **Oracle Autonomous Database** (SQL-based data storage)  
+- **Oracle Cloud Compute Instance** (Deployment server)  
+
+---
+
+## 👥 Contributors  
+
+### **Current Maintainer**  
+- **Alec Patterson**  
+
+### **Past Contributors**  
+- Joseph Barron  
+- Christian Carey  
+- Quan Nguyen  
+
+---
+
+## 📝 License  
+This project is **not licensed for public use**. Please contact me for permissions. 
