@@ -2,6 +2,11 @@
 
 This project leverages a SQL database and REST API to analyze and visualize interesting trends in baseball data. By structuring the data into a well-defined schema and optimizing queries, the website provides interactive visualizations that offer insights into five select aspects of baseball statistics.
 
+## ⚠️ App Status  
+
+> **Note:** The hosted database and backend API are no longer active.  
+> As a result, the live website is currently **non-functional** — interactive charts and data-driven features will not load.  
+
 ## 🚀 Deployment
 
 This project is deployed on **Oracle Cloud DB and Compute**. After the initial completion, I (Alec) migrated the app and database to my personal Oracle Cloud instance for public access. Interested developers can find the deployment-specific modifications in the **Oracle deployment branch**.  
